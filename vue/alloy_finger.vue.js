@@ -3,7 +3,6 @@
  * Github: https://github.com/AlloyTeam/AlloyFinger
  */
 
-; (function() {
 
   var AlloyFingerPlugin = {
     install: function(Vue, options) {
@@ -131,11 +130,4 @@
     }
   }
 
-  // export
-  if(typeof module !== 'undefined' && typeof exports === 'object') {
-    module.exports = AlloyFingerPlugin;
-  } else {
-    window.AlloyFingerVue = AlloyFingerPlugin;
-  }
-
-})();
+  export default AlloyFingerPlugin;
